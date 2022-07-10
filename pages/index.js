@@ -1,4 +1,8 @@
-import { Container, Box, Heading, Image, useCOlorModeValue, useColorModeValue } from '@chakra-ui/react'
+import NextLink from 'next/link'
+import { ChevronRightIcon } from '@chakra-ui/icons';
+import { Button, Container, Box, Heading, Image, useCOlorModeValue, useColorModeValue, Link } from '@chakra-ui/react'
+import Section from '../components/section';
+import Paragraph from '../components/paragragh';
 
 const Page = () => {
     return (
@@ -25,6 +29,17 @@ const Page = () => {
                     />
                 </Box>
             </Box>
+            <Section delay={0.1}>
+                <Heading as="h3" variant="section-title">Works</Heading>
+                <Paragraph>
+                    Computer Science Undergraduate Batch of 2023 from Vellore Institute Of Technology, Vellore, TN, India. <NextLink href="/works/"><Link>Working Link</Link></NextLink>
+                </Paragraph>
+                <Box align="center" my={4}>
+                    <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
+                        My Portfolio
+                    </Button>
+                </Box>
+            </Section>
         </Container>
     )
 }
