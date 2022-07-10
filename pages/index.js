@@ -8,14 +8,20 @@ import { BioMonth, BioSection, BioYear } from '../components/layouts/bio';
 const Page = () => {
     return (
         <Container>
-            <Box borderRadius="lg" bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')} mb={6} p={3} textColor="white" align="center">
+            <Box borderRadius="lg"
+                mb={6}
+                p={3}
+                textAlign="center"
+                bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
+                css={{ backdropFilter: 'blur(10px)' }}
+            >
                 Hello, I am Kanit Mann. I love creating!
             </Box>
 
             <Box display={{ md: 'flex' }}>
                 <Box flexGrow={1}>
                     <Heading as="h2" variant="page-title">Kanit Mann</Heading>
-                    <p>Developer / Designer / Programmer</p>
+                    {/* <p>Developer / Designer / Programmer</p> */}
                 </Box>
                 <Box flexShrink={0} mt={{ base: 4, md: 0 }} ml={{ md: 6 }} align="center">
                     <Image
@@ -57,20 +63,23 @@ const Page = () => {
                     Completed HighSchool in Noida, India.
 
                     <BioMonth>July</BioMonth>
-                    Started studying at <a href="https://www.vit.ac.in/"><Link>Vellore Institute of Technology </Link></a>, Vellore.
+                    Started studying at <Link href="https://www.vit.ac.in/">Vellore Institute of Technology </Link>, Vellore.
                 </BioSection>
 
                 <BioSection>
                     <BioYear>2021</BioYear>
                     <BioMonth>Mar - Aug</BioMonth>
-                    Interned at <a href="https://www.trikon.tech/"><Link>Trikon Technologies</Link></a> as Firmware Developer.
+                    Interned at <Link href="https://www.trikon.tech/">Trikon Technologies</Link> as Firmware Developer.
                     <BioMonth>Jul - Sep</BioMonth>
-                    Joined <a href="https://www.tatapower.com/"><Link>Tata Power</Link></a> as Full Stack Intern.
+                    Joined <Link href="https://www.tatapower.com/">Tata Power</Link> as Full Stack Intern.
                 </BioSection>
             </Section>
 
             <Section delay={0.3}>
                 <Heading as="h3" variant="section-title">I ♥</Heading>
+                <Paragraph>
+                    Programming, Designing , Gaming, Reading, Listening to and Writing Rap Music
+                </Paragraph>
             </Section>
         </Container>
     )
