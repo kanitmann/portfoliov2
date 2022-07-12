@@ -1,10 +1,12 @@
 import NextLink from 'next/link'
 import { ChevronRightIcon } from '@chakra-ui/icons';
 import { BeatLoader } from 'react-spinners';
-import { Button, Container, Box, Heading, Image, useCOlorModeValue, useColorModeValue, Link } from '@chakra-ui/react'
+import { Button, Container, Box, Heading, Image, Icon, SimpleGrid, useCOlorModeValue, useColorModeValue, Link, ListItem, List } from '@chakra-ui/react'
 import Section from '../components/section';
 import Paragraph from '../components/paragragh';
 import { BioMonth, BioSection, BioYear } from '../components/layouts/bio';
+import { GridItem } from '../components/grid-item';
+import { IoLogoTwitter, IoLogoLinkedin, IoLogoInstagram } from 'react-icons/io5';
 
 const Page = () => {
     return (
@@ -46,7 +48,7 @@ const Page = () => {
                 </Paragraph>
 
                 <Box align="center" my={4}>
-                    <NextLink href="https://www.github.com/kanitmann" passHref scroll={false}>
+                    <NextLink href="https://www.github.com/kanitmann" target="_blank">
                         <Button
                             rightIcon={<ChevronRightIcon />}
                             colorScheme="teal"
@@ -92,8 +94,31 @@ const Page = () => {
 
             <Section delay={0.4}>
                 <Heading as="h3" variant="section-title">Social</Heading>
-
+                <List>
+                    <ListItem>
+                        <Link href="https://twitter.com/mannkanit" target="_blank">
+                            <Button variant="ghost" colorScheme="teal" leftIcon={<Icon as={IoLogoTwitter} />}>
+                                @mannkanit
+                            </Button>
+                        </Link>
+                    </ListItem>
+                    <ListItem>
+                        <Link href="https://www.linkedin.com/in/kanitmann/" target="_blank">
+                            <Button variant="ghost" colorScheme="teal" leftIcon={<Icon as={IoLogoLinkedin} />}>
+                                @kanitmann
+                            </Button>
+                        </Link>
+                    </ListItem>
+                    <ListItem>
+                        <Link href="https://www.instagram.com/can.it07/" target="_blank">
+                            <Button variant="ghost" colorScheme="teal" leftIcon={<Icon as={IoLogoInstagram} />}>
+                                @can.it07
+                            </Button>
+                        </Link>
+                    </ListItem>
+                </List>
             </Section>
+
         </Container>
     )
 }
