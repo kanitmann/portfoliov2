@@ -17,9 +17,12 @@
     "@chakra-ui/react": "^2.2.1",
     "@emotion/react": "^11.9.3",
     "@emotion/styled": "^11.9.3",
+    "add": "^2.0.6",
     "framer-motion": "^4.1.17",
     "next": "^12.2.0",
-    "react-icons": "^4.4.0"
+    "react-icons": "^4.4.0",
+    "react-spinners": "^0.13.3",
+    "yarn": "^1.22.19"
   },
   "devDependencies": {
     "eslint": "^8.19.0",
