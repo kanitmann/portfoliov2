@@ -1,5 +1,6 @@
 import NextLink from 'next/link'
 import { ChevronRightIcon } from '@chakra-ui/icons';
+import { BeatLoader } from 'react-spinners';
 import { Button, Container, Box, Heading, Image, useCOlorModeValue, useColorModeValue, Link } from '@chakra-ui/react'
 import Section from '../components/section';
 import Paragraph from '../components/paragragh';
@@ -43,10 +44,17 @@ const Page = () => {
                     Embedded Programming.
                     {/* <NextLink href="/works/"><Link>Working Link</Link></NextLink> */}
                 </Paragraph>
+
                 <Box align="center" my={4}>
-                    <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
-                        My Github
-                    </Button>
+                    <NextLink href="https://www.github.com/kanitmann" passHref scroll={false}>
+                        <Button
+                            rightIcon={<ChevronRightIcon />}
+                            colorScheme="teal"
+                            spinner={<BeatLoader size={8} color='white' />}
+                        >
+                            My Github
+                        </Button>
+                    </NextLink>
                 </Box>
             </Section>
             <Section delay={0.2}>
@@ -78,8 +86,13 @@ const Page = () => {
             <Section delay={0.3}>
                 <Heading as="h3" variant="section-title">I ♥</Heading>
                 <Paragraph>
-                    Programming, Designing , Gaming, Reading, Listening to and Writing Rap Music
+                    Programming, Designing, Gaming, Reading, Listening to and Writing Rap Music
                 </Paragraph>
+            </Section>
+
+            <Section delay={0.4}>
+                <Heading as="h3" variant="section-title">Social</Heading>
+
             </Section>
         </Container>
     )
