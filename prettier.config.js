@@ -1,4 +1,4 @@
-const options ={
+const options = {
     arrowParens: 'avoid',
     singleQuote: true,
     bracketSpacing: true,
@@ -8,4 +8,4 @@ const options ={
     trailingComma: 'none'
 }
 
-module.export = options;
+module.exports = options;
