@@ -20,7 +20,7 @@ import { IoLogoGithub } from 'react-icons/io5'
 
 const LinkItem = ({ href, path, target, children, ...props }) => {
     const active = path == href
-    const inactiveColor = useColorModeValue('gray.800', 'whiteAlpha.900')
+    const inactiveColor = useColorModeValue('gray200', 'whiteAlpha.900')
     return (
         <NextLink href={href} passHref scroll={false}>
             <Link
@@ -46,7 +46,7 @@ const NavBar = props => {
             w="100%"
             bg={useColorModeValue('fffffff40', '#20202380')}
             style={{ backdropFilter: 'blur(10px)' }}
-            zIndex={1}
+            zIndex={2}
             {...props}
         >
             <Container
