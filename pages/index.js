@@ -1,6 +1,6 @@
 import NextLink from 'next/link'
 import { ChevronRightIcon } from '@chakra-ui/icons';
-import { BeatLoader } from 'react-spinners';
+// import { BeatLoader } from 'react-spinners';
 import { Button, Container, Box, Heading, Image, Icon, SimpleGrid, useCOlorModeValue, useColorModeValue, Link, ListItem, List } from '@chakra-ui/react'
 import Section from '../components/section';
 import Paragraph from '../components/paragragh';
@@ -52,7 +52,7 @@ const Page = () => {
                         <Button
                             rightIcon={<ChevronRightIcon />}
                             colorScheme="teal"
-                            spinner={<BeatLoader size={8} color='white' />}
+                        // spinner={<BeatLoader size={8} color='white' />}
                         >
                             My Github
                         </Button>
