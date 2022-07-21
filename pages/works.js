@@ -1,8 +1,10 @@
-import { Container, Box, Heading, SimpleGrid, Dividers } from '@chakra-ui/react'
+import { Container, Box, Heading, SimpleGrid, Divider } from '@chakra-ui/react'
 import Section from "../components/section"
 import { WorkGridItem } from '../components/grid-item'
 import thumbTheoryJS from '../public/images/Theoryjs.png'
 import thumbCOVIDAPI from '../public/images/news_api.png'
+import thumbDWebApp from '../public/images/DAPP.png'
+import thumbGAuth from '../public/images/gauth.png'
 
 const Works = () => {
     return (
@@ -18,11 +20,29 @@ const Works = () => {
                 </Section>
                 <Section>
                     <WorkGridItem id="covidnewsapi" title="COVID News API" thumbnail={thumbCOVIDAPI}>
-                        API to get COVID-19 news
+                        An API to get latest COVID-19 news, made in JS
+                    </WorkGridItem>
+                </Section>
+                <Section>
+                    <WorkGridItem id="gauth" title="" thumbnail={thumbGAuth}>
+                        G-Aut is a mail automation service for Gmail built on python
                     </WorkGridItem>
                 </Section>
             </SimpleGrid>
-        </Container>
+            <Section delay={0.3}>
+                <Divider my={6} />
+                <Heading as="h3" fontSize={20} mb={4}>
+                    Collaborations
+                </Heading>
+            </Section>
+            <SimpleGrid columns={[1, 1, 2]} gap={6}>
+                <Section delay={0.4}>
+                    <WorkGridItem id="Dwebapp" title="Decentralized Social Wall" thumbnail={thumbDWebApp}>
+                        Decentralized Social Media Wall
+                    </WorkGridItem>
+                </Section>
+            </SimpleGrid>
+        </Container >
     )
 }
 
