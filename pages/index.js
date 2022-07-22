@@ -2,9 +2,9 @@ import NextLink from 'next/link'
 import { ChevronRightIcon } from '@chakra-ui/icons';
 // import { BeatLoader } from 'react-spinners';
 import Layout from '../components/layouts/article';
-import { Button, Container, Box, Heading, Image, Icon, SimpleGrid, useCOlorModeValue, useColorModeValue, Link, ListItem, List } from '@chakra-ui/react'
+import { Button, Container, Box, Heading, Image, Icon, Text, SimpleGrid, useCOlorModeValue, useColorModeValue, Link, ListItem, List } from '@chakra-ui/react'
 import Section from '../components/section';
-import Paragraph from '../components/paragragh';
+import Paragraph from '../components/paragraph';
 import { BioMonth, BioSection, BioYear } from '../components/layouts/bio';
 import { GridItem } from '../components/grid-item';
 import { IoLogoTwitter, IoLogoLinkedin, IoLogoInstagram } from 'react-icons/io5';
@@ -26,7 +26,7 @@ const Page = () => {
                 <Box display={{ md: 'flex' }}>
                     <Box flexGrow={1}>
                         <Heading as="h2" variant="page-title">Kanit Mann</Heading>
-                        {/* <p>Developer / Designer / Programmer</p> */}
+                        <Text>Developer / Designer / Programmer</Text>
                     </Box>
                     <Box flexShrink={0} mt={{ base: 4, md: 0 }} ml={{ md: 6 }} align="center">
                         <Image
