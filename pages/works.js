@@ -1,4 +1,4 @@
-import { Container, Box, Heading, SimpleGrid, Divider } from '@chakra-ui/react'
+import { Container, Heading, SimpleGrid, Divider } from '@chakra-ui/react'
 import Section from "../components/section"
 import Layout from '../components/layouts/article'
 import { WorkGridItem } from '../components/grid-item'
@@ -17,7 +17,7 @@ const Works = () => {
                 <SimpleGrid columns={[1, 1, 2]} gap={6}>
                     <Section>
                         <WorkGridItem id="theoryjs" title="TheoryJS" thumbnail={thumbTheoryJS}>
-                            CLI Tool to quickly save what's on your mind 🦋
+                            CLI Tool to quickly save what&apo;s on your mind 🦋
                         </WorkGridItem>
                     </Section>
                     <Section>

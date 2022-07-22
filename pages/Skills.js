@@ -1,10 +1,9 @@
 import React from 'react'
-import { Container, Box, Text, Heading, Divider, Link } from '@chakra-ui/react'
+import { Container, Heading, Divider, } from '@chakra-ui/react'
 import Section from "../components/section"
 import Layout from "../components/layouts/article"
 import { SkillSection, BioSection, BioYear, ItemedList } from '../components/layouts/bio'
-import { GridItem } from "../components/grid-item"
-import Paragraph from '../components/paragraph'
+
 
 const Skills = () => {
     return (

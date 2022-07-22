@@ -2,11 +2,10 @@ import NextLink from 'next/link'
 import { ChevronRightIcon } from '@chakra-ui/icons';
 // import { BeatLoader } from 'react-spinners';
 import Layout from '../components/layouts/article';
-import { Button, Container, Box, Heading, Image, Icon, Text, SimpleGrid, useCOlorModeValue, useColorModeValue, Link, ListItem, List } from '@chakra-ui/react'
+import { Button, Container, Box, Heading, Image, Icon, Text, useColorModeValue, Link, ListItem, List } from '@chakra-ui/react'
 import Section from '../components/section';
 import Paragraph from '../components/paragraph';
 import { BioMonth, BioSection, BioYear } from '../components/layouts/bio';
-import { GridItem } from '../components/grid-item';
 import { IoLogoTwitter, IoLogoLinkedin, IoLogoInstagram } from 'react-icons/io5';
 
 const Page = () => {
