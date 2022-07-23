@@ -2,11 +2,15 @@ import NextLink from 'next/link'
 import { ChevronRightIcon } from '@chakra-ui/icons';
 // import { BeatLoader } from 'react-spinners';
 import Layout from '../components/layouts/article';
-import { Button, Container, Box, Heading, Image, Icon, Text, useColorModeValue, Link, ListItem, List } from '@chakra-ui/react'
+import { Button, Container, Box, Heading, Image, Icon, Text, useColorModeValue, Link, ListItem, List, chakra } from '@chakra-ui/react'
 import Section from '../components/section';
 import Paragraph from '../components/paragraph';
 import { BioMonth, BioSection, BioYear } from '../components/layouts/bio';
 import { IoLogoTwitter, IoLogoLinkedin, IoLogoInstagram } from 'react-icons/io5';
+
+const ProfileImage = chakra(Image, {
+    shouldForwardProp: prop => ['width', 'height', 'src', 'alt'].includes(prop)
+})
 
 const Page = () => {
     return (
@@ -27,17 +31,30 @@ const Page = () => {
                         <Heading as="h2" variant="page-title">Kanit Mann</Heading>
                         <Text>Developer / Designer / Programmer</Text>
                     </Box>
-                    <Box flexShrink={0} mt={{ base: 4, md: 0 }} ml={{ md: 6 }} align="center">
-                        <Image
+                    <Box
+                        flexShrink={0}
+                        mt={{ base: 4, md: 0 }}
+                        ml={{ md: 6 }}
+                        textAlign="center"
+                    >
+                        <Box
                             borderColor="whiteAlpha.800"
                             borderWidth={2}
                             borderStyle="solid"
-                            maxWidth="100px"
+                            w="100px"
+                            h="100px"
                             display="inline-block"
                             borderRadius="full"
-                            src="/images/kanitmann.png"
-                            alt="Profile Image"
-                        />
+                            overflow="hidden"
+                        >
+                            <ProfileImage
+                                src="/images/kanitmann.png"
+                                alt="Profile image"
+                                borderRadius="full"
+                                width="100%"
+                                height="100%"
+                            />
+                        </Box>
                     </Box>
                 </Box>
                 <Section delay={0.1}>
