@@ -25,9 +25,11 @@ const Main = ({ children, router }) => {
                 <meta name="twitter:card" content="summary_large_image" />
                 <meta name="twitter:site" content="@mannkanit" />
                 <meta name="twitter:creator" content="@mannkanit" />
+                <meta name="twitter:image" content="https://raw.githubusercontent.com/kanitmann/portfoliov2/master/public/card.png" />
                 <meta property="og:site_name" content="Kanit Mann" />
                 <meta name="og:title" content="Kanit Mann" />
                 <meta property="og:type" content="website" />
+                <meta property="og:image" content="https://raw.githubusercontent.com/kanitmann/portfoliov2/master/public/card.png" />
                 <title>Kanit Mann - Homepage</title>
             </Head>
 
