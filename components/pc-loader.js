@@ -6,7 +6,7 @@ export const PCSpinner = () => (
         size="xl"
         position="absolute"
         left="50%"
-        top="30%"
+        top="60%"
         ml="calc(0px - var(--spinner-size) / 2)"
         mt="calc(0px - var(--spinner-size))"
     />
