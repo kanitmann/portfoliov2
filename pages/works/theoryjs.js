@@ -9,7 +9,7 @@ const Work = () => {
         <Layout title="TheoryJS">
             <Container>
                 <Title>TheoryJS <Badge>2022</Badge> </Title>
-                <P>A Command Line Interface (CLI) Tool to quickly save what's on your mind.</P>
+                <P>A Command Line Interface (CLI) Tool to quickly save what&pos;s on your mind.</P>
                 <List ml={4} my={4}>
                     <ListItem>
                         <Meta>Website</Meta>
