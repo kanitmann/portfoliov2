@@ -100,6 +100,8 @@ const Page = () => {
                         Interned at <Link href="https://www.trikon.tech/">Trikon Technologies</Link> as Firmware Developer.
                         <BioMonth>Jul - Sep</BioMonth>
                         Joined <Link href="https://www.tatapower.com/">Tata Power</Link> as Full Stack Intern.
+                        <BioMonth>Mar - Dec</BioMonth>
+                        Promoted to <b>Head of Design</b> and <b>Member of Board </b>at RobotVITics - Official Robotics Club of VIT.
                     </BioSection>
                 </Section>
 
