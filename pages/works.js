@@ -44,6 +44,19 @@ const Works = () => {
                         </WorkGridItem>
                     </Section>
                 </SimpleGrid>
+                <Section delay={0.3}>
+                    <Divider my={6} />
+                    <Heading as="h3" fontSize={20} mb={4}>
+                        Freelance
+                    </Heading>
+                </Section>
+                <SimpleGrid columns={[1, 1, 2]} gap={6}>
+                    <Section delay={0.4}>
+                        <WorkGridItem id="freelance" title="Freelance Profile" thumbnail={thumbDWebApp}>
+                            Freelance profile TBA
+                        </WorkGridItem>
+                    </Section>
+                </SimpleGrid>
             </Container >
         </Layout>
     )
