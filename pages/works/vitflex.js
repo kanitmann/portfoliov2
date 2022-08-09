@@ -13,7 +13,7 @@ const Work = () => {
                 </P>
                 <Divider my={6} />
                 <Box my={6} align="center">
-                    <NextLink href="/works">
+                    <NextLink href="/works" passHref>
                         <Button colorScheme="teal">Return to Works</Button>
                     </NextLink>
                 </Box>

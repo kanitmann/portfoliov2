@@ -66,7 +66,7 @@ const Page = () => {
                     </Paragraph>
 
                     <Box align="center" my={4}>
-                        <NextLink href="https://www.github.com/kanitmann" target="_blank">
+                        <Link href="https://www.github.com/kanitmann" target="_blank" passHref>
                             <Button
                                 rightIcon={<ChevronRightIcon />}
                                 colorScheme="teal"
@@ -74,7 +74,7 @@ const Page = () => {
                             >
                                 My Github
                             </Button>
-                        </NextLink>
+                        </Link>
                     </Box>
                 </Section>
                 <Section delay={0.2}>
@@ -91,15 +91,15 @@ const Page = () => {
                         Completed HighSchool in Noida, India.
 
                         <BioMonth>July</BioMonth>
-                        Started studying at <Link href="https://www.vit.ac.in/">Vellore Institute of Technology </Link>, Vellore.
+                        Started studying at <Link href="https://www.vit.ac.in/" passHref>Vellore Institute of Technology </Link>, Vellore.
                     </BioSection>
 
                     <BioSection>
                         <BioYear>2021</BioYear>
                         <BioMonth>Mar - Aug</BioMonth>
-                        Interned at <Link href="https://www.trikon.tech/">Trikon Technologies</Link> as Firmware Developer.
+                        Interned at <Link href="https://www.trikon.tech/" passHref>Trikon Technologies</Link> as Firmware Developer.
                         <BioMonth>Jul - Sep</BioMonth>
-                        Joined <Link href="https://www.tatapower.com/">Tata Power</Link> as Full Stack Intern.
+                        Joined <Link href="https://www.tatapower.com/" passHref>Tata Power</Link> as Full Stack Intern.
                         <BioMonth>Mar - Dec</BioMonth>
                         Promoted to <b>Head of Design</b> and <b>Member of Board </b>at RobotVITics - Official Robotics Club of VIT.
                     </BioSection>
@@ -116,21 +116,21 @@ const Page = () => {
                     <Heading as="h3" variant="section-title">Social</Heading>
                     <List>
                         <ListItem>
-                            <Link href="https://twitter.com/mannkanit" target="_blank">
+                            <Link href="https://twitter.com/mannkanit" target="_blank" passHref>
                                 <Button variant="ghost" colorScheme="teal" leftIcon={<Icon as={IoLogoTwitter} />}>
                                     @mannkanit
                                 </Button>
                             </Link>
                         </ListItem>
                         <ListItem>
-                            <Link href="https://www.linkedin.com/in/kanitmann/" target="_blank">
+                            <Link href="https://www.linkedin.com/in/kanitmann/" target="_blank" passHref>
                                 <Button variant="ghost" colorScheme="teal" leftIcon={<Icon as={IoLogoLinkedin} />}>
                                     @kanitmann
                                 </Button>
                             </Link>
                         </ListItem>
                         <ListItem>
-                            <Link href="https://www.instagram.com/can.it07/" target="_blank">
+                            <Link href="https://www.instagram.com/can.it07/" target="_blank" passHref>
                                 <Button variant="ghost" colorScheme="teal" leftIcon={<Icon as={IoLogoInstagram} />}>
                                     @can.it07
                                 </Button>
