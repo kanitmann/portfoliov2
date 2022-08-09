@@ -9,7 +9,7 @@ const Work = () => {
         <Layout title="Auto-Mailer">
             <Container maxW='container.sm'>
                 <Title>Auto Mailer <Badge>2021</Badge> </Title>
-                <P>'Auto Mailer' is a mail automation service for Gmail built on python with the following features.
+                <P>&apos;Auto Mailer&apos; is a mail automation service for Gmail built on python with the following features.
                     <UnorderedList ml={4} my={2}>
                         <ListItem>
                             Support CSV Mailing
