@@ -1,3 +1,4 @@
+import NextLink from 'next/link'
 import { ChevronRightIcon } from '@chakra-ui/icons';
 import Layout from '../components/layouts/article';
 import { Button, Container, Box, Heading, Image, Icon, Text, useColorModeValue, Link, ListItem, List, chakra } from '@chakra-ui/react'
@@ -60,19 +61,18 @@ const Page = () => {
                     <Paragraph>
                         Tech enthusiast with entry-level industrial experience in Database Management, Web Development, and
                         Embedded Programming.
-                        {/* <NextLink href="/works/"><Link>Working Link</Link></NextLink> */}
                     </Paragraph>
 
                     <Box align="center" my={4}>
-                        <Link href="https://www.github.com/kanitmann" target="_blank" passHref>
+                        <NextLink href="/works" target="works" passHref>
                             <Button
                                 rightIcon={<ChevronRightIcon />}
                                 colorScheme="teal"
                             // spinner={<BeatLoader size={8} color='white' />}
                             >
-                                My Github
+                                My Work
                             </Button>
-                        </Link>
+                        </NextLink>
                     </Box>
                 </Section>
                 <Section delay={0.2}>
@@ -86,7 +86,7 @@ const Page = () => {
                     <BioSection>
                         <BioYear>2019</BioYear>
                         <BioMonth>March</BioMonth>
-                        Completed HighSchool in Noida, India.
+                        Completed High School in Noida, India.
 
                         <BioMonth>July</BioMonth>
                         Started studying at <Link href="https://www.vit.ac.in/" passHref>Vellore Institute of Technology </Link>, Vellore.
