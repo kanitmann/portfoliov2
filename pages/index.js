@@ -15,7 +15,7 @@ const ProfileImage = chakra(Image, {
 const Page = () => {
     return (
         <Layout>
-            <Container>
+            <Container maxW='container.sm'>
                 <Box borderRadius="lg"
                     mb={6}
                     p={3}

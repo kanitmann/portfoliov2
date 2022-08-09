@@ -7,7 +7,7 @@ import Layout from '../../components/layouts/article'
 const Work = () => {
     return (
         <Layout title="TheoryJS">
-            <Container>
+            <Container maxW='container.sm'>
                 <Title>TheoryJS <Badge>2022</Badge> </Title>
                 <P>A Command Line Interface (CLI) Tool to quickly save what&pos;s on your mind.</P>
                 <List ml={4} my={4}>
