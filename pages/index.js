@@ -1,6 +1,4 @@
-import NextLink from 'next/link'
 import { ChevronRightIcon } from '@chakra-ui/icons';
-// import { BeatLoader } from 'react-spinners';
 import Layout from '../components/layouts/article';
 import { Button, Container, Box, Heading, Image, Icon, Text, useColorModeValue, Link, ListItem, List, chakra } from '@chakra-ui/react'
 import Section from '../components/section';
