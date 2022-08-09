@@ -28,8 +28,8 @@ const Work = () => {
 
                 <List ml={4} my={4}>
                     <ListItem>
-                        <Meta>Rapid-API</Meta>
-                        <Link href="https://rapidapi.com/kanitmann/api/covid-news-live1">https://rapidapi.com/kanitmann/api/covid-news-live1 <ExternalLinkIcon mx="1px" />  </Link>
+                        <Meta>Source</Meta>
+                        <Link href="https://github.com/kanitmann/Mail_Automation">https://github.com/kanitmann/Mail_Automation <ExternalLinkIcon mx="1px" />  </Link>
                     </ListItem>
                     <ListItem>
                         <Meta>Supports</Meta>
