@@ -29,7 +29,7 @@ const Works = () => {
                     </Section>
                     <Section>
                         <WorkGridItem id="gauth" title="G-Mailer" thumbnail={thumbGAuth}>
-                            G-Mailer is a mail automation service for Gmail built on python
+                            Auto-Mailer is a mail automation service for Gmail built on python
                         </WorkGridItem>
                     </Section>
                 </SimpleGrid>
