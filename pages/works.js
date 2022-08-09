@@ -41,13 +41,13 @@ const Works = () => {
                 </Section>
                 <SimpleGrid columns={[1, 1, 2]} gap={6}>
                     <Section delay={0.4}>
-                        <WorkGridItem id="Dwebapp" title="Decentralized Social Wall" thumbnail={thumbDWebApp}>
+                        <WorkGridItem id="dwebapp" title="Decentralized Social Wall" thumbnail={thumbDWebApp}>
                             Decentralized Social Media Wall
                         </WorkGridItem>
                     </Section>
                     <Section delay={0.4}>
-                        <WorkGridItem id="vitflex" title="Companion app for VIT students" thumbnail={thumbVITFlex}>
-                            VIT FLEX
+                        <WorkGridItem id="vitflex" title="VIT Flex" thumbnail={thumbVITFlex}>
+                            Companion app for VIT students
                         </WorkGridItem>
                     </Section>
                 </SimpleGrid>
