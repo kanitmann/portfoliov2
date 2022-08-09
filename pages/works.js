@@ -6,11 +6,13 @@ import thumbTheoryJS from '../public/images/Theoryjs.png'
 import thumbCOVIDAPI from '../public/images/news_api.png'
 import thumbDWebApp from '../public/images/DAPP.png'
 import thumbGAuth from '../public/images/gauth.png'
+import thumbVITFlex from '../public/images/VITFlex.png'
+import thumbFreelance from '../public/images/Freelanceimg.png'
 
 const Works = () => {
     return (
         <Layout>
-            <Container>
+            <Container maxW='container.sm'>
                 <Heading as="h3" fontSize={20} mb={4}>
                     Works
                 </Heading>
@@ -26,8 +28,8 @@ const Works = () => {
                         </WorkGridItem>
                     </Section>
                     <Section>
-                        <WorkGridItem id="gauth" title="" thumbnail={thumbGAuth}>
-                            G-Aut is a mail automation service for Gmail built on python
+                        <WorkGridItem id="gauth" title="G-Mailer" thumbnail={thumbGAuth}>
+                            G-Mailer is a mail automation service for Gmail built on python
                         </WorkGridItem>
                     </Section>
                 </SimpleGrid>
@@ -43,6 +45,11 @@ const Works = () => {
                             Decentralized Social Media Wall
                         </WorkGridItem>
                     </Section>
+                    <Section delay={0.4}>
+                        <WorkGridItem id="vitflex" title="Companion app for VIT students" thumbnail={thumbVITFlex}>
+                            VIT FLEX
+                        </WorkGridItem>
+                    </Section>
                 </SimpleGrid>
                 <Section delay={0.3}>
                     <Divider my={6} />
@@ -52,7 +59,7 @@ const Works = () => {
                 </Section>
                 <SimpleGrid columns={[1, 1, 2]} gap={6}>
                     <Section delay={0.4}>
-                        <WorkGridItem id="freelance" title="Freelance Profile" thumbnail={thumbDWebApp}>
+                        <WorkGridItem id="freelance" title="Freelance Profile" thumbnail={thumbFreelance}>
                             Freelance profile TBA
                         </WorkGridItem>
                     </Section>
