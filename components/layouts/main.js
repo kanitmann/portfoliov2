@@ -4,6 +4,7 @@ import { Box, Container } from '@chakra-ui/react'
 import PCLoader from "../pc-loader"
 import dynamic from "next/dynamic"
 import Footer from "../footer"
+import Script from 'next/script';
 
 
 const LazyPC = dynamic(() => import('../pc'), {
@@ -14,14 +15,27 @@ const LazyPC = dynamic(() => import('../pc'), {
 const Main = ({ children, router }) => {
     return (
         <Box as="main" pb={8}>
-            <Head>
+            <Script id="analytics" strategy="lazyOnload" src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`} />
 
+            <Script id="googleanalytics" strategy="lazyOnload">
+                {`
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag(){dataLayer.push(arguments);}
+                    gtag('js', new Date());
+                    gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}', {
+                    page_path: window.location.pathname,
+                    });
+                `}
+            </Script>
+            <Head>
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <meta name="description" content="Kanit's homepage" />
                 <meta name="author" content="Kanit Mann" />
                 <meta name="author" content="kanitmann" />
+                <meta name="robots" content="all" />
+                <meta name="robots" content="max-image-preview:standard" />
                 <link rel="apple-touch-icon" href="apple-touch-icon.png" />
-                <link rel="shortcut icon" href="/apple-touch-icon.png" type="image/x-icon" />
+                <link rel="shortcut icon" href="/apple-touch-icon.png" type="image/apple-touch-icon.png" />
                 <meta name="twitter:title" content="Kanit Mann" />
                 <meta name="twitter:card" content="summary_large_image" />
                 <meta name="twitter:site" content="@mannkanit" />
