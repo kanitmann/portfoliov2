@@ -48,7 +48,7 @@ const Main = ({ children, router }) => {
                 <meta property="og:image:type" content="image/png" />
                 <meta property="og:image:width" content="400" />
                 <meta property="og:image:height" content="300" />
-                <meta property="og:image:alt" content="An screenshot image of Kanit's homepage" />
+                <meta property="og:image:alt" content="A screenshot image of Kanit's homepage" />
                 <title>Kanit Mann - Homepage</title>
             </Head>
 
