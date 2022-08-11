@@ -29,7 +29,7 @@ const Main = ({ children, router }) => {
             </Script>
             <Head>
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
-                <meta name="description" content="Kanit's homepage" />
+                <meta name="description" content="Kanit Mann is a tech enthusiast with entry-level industrial experience in Database Management, Web Development, and Embedded Programming." />
                 <meta name="author" content="Kanit Mann" />
                 <meta name="author" content="kanitmann" />
                 <meta name="robots" content="all" />
