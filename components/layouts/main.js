@@ -44,7 +44,7 @@ const Main = ({ children, router }) => {
                 <meta property="og:site_name" content="Kanit Mann" />
                 <meta name="og:title" content="Kanit Mann" />
                 <meta property="og:type" content="website" />
-                <meta property="og:image" content="https://raw.githubusercontent.com/kanitmann/portfoliov2/master/public/card.png" />
+                <meta property="og:image:url" content="https://raw.githubusercontent.com/kanitmann/portfoliov2/master/public/card.png" />
                 <title>Kanit Mann - Homepage</title>
             </Head>
 
