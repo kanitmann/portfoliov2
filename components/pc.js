@@ -37,6 +37,7 @@ const PC = () => {
 
     /* eslint-disable react-hooks/exhaustive-deps */
     useEffect(() => {
+        console.log("calllinh")
         const { current: container } = refContainer
         if (container && !renderer) {
             const scW = container.clientWidth
@@ -111,6 +112,7 @@ const PC = () => {
                 console.log('unmount')
                 cancelAnimationFrame(req)
                 renderer.dispose()
+                refContainer.current = null
             }
         }
     }, [])
