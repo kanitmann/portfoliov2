@@ -68,7 +68,6 @@ const Page = () => {
                             <Button
                                 rightIcon={<ChevronRightIcon />}
                                 colorScheme="teal"
-                            // spinner={<BeatLoader size={8} color='white' />}
                             >
                                 My Work
                             </Button>
@@ -76,14 +75,17 @@ const Page = () => {
                     </Box>
                 </Section>
 
-
-                {/* production test */}
                 <Section delay={0.2}>
                     <Heading as="h3" variant="section-title">Bio</Heading>
+
                     <BioSection>
-                        <BioYear>2001</BioYear>
-                        <BioMonth>July</BioMonth>
-                        Born in Haryana, India.
+                        <BioYear>2021</BioYear>
+                        <BioMonth>Mar - Aug</BioMonth>
+                        Interned at <Link href="https://www.trikon.tech/" passHref>Trikon Technologies</Link> as Firmware Developer.
+                        <BioMonth>Jul - Sep</BioMonth>
+                        Joined <Link href="https://www.tatapower.com/" passHref>Tata Power</Link> as Full Stack Intern.
+                        <BioMonth>Mar - Dec</BioMonth>
+                        Promoted to <b>Head of Design</b> and <b>Member of Board </b>at RobotVITics - Official Robotics Club of VIT.
                     </BioSection>
 
                     <BioSection>
@@ -96,13 +98,9 @@ const Page = () => {
                     </BioSection>
 
                     <BioSection>
-                        <BioYear>2021</BioYear>
-                        <BioMonth>Mar - Aug</BioMonth>
-                        Interned at <Link href="https://www.trikon.tech/" passHref>Trikon Technologies</Link> as Firmware Developer.
-                        <BioMonth>Jul - Sep</BioMonth>
-                        Joined <Link href="https://www.tatapower.com/" passHref>Tata Power</Link> as Full Stack Intern.
-                        <BioMonth>Mar - Dec</BioMonth>
-                        Promoted to <b>Head of Design</b> and <b>Member of Board </b>at RobotVITics - Official Robotics Club of VIT.
+                        <BioYear>2001</BioYear>
+                        <BioMonth>July</BioMonth>
+                        Born in Haryana, India.
                     </BioSection>
                 </Section>
 
@@ -141,7 +139,7 @@ const Page = () => {
                 </Section>
 
             </Container>
-        </Layout>
+        </Layout >
     )
 }
 
