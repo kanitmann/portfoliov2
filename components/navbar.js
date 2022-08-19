@@ -14,7 +14,7 @@ import {
     IconButton,
     useColorModeValue
 } from '@chakra-ui/react'
-import { HamburgerIcon } from '@chakra-ui/icons'
+import { HamburgerIcon, AttachmentIcon } from '@chakra-ui/icons'
 import ThemeToggleButton from './theme-toggle-button'
 import { IoLogoGithub } from 'react-icons/io5'
 
@@ -78,6 +78,17 @@ const NavBar = props => {
                     </LinkItem>
                     <LinkItem
                         target="_blank"
+                        href="https://drive.google.com/file/d/1coMZuiIl96_udTjlHYE-FskNfexAcJ9A/view?usp=sharing"
+                        display="inline-flex"
+                        alignItems="center"
+                        style={{ gap: 4 }}
+                        pl={2}
+                    >
+                        <AttachmentIcon />
+                        Resume
+                    </LinkItem>
+                    <LinkItem
+                        target="_blank"
                         href="https://github.com/kanitmann/portfoliov2"
                         path={path}
                         display="inline-flex"
@@ -92,7 +103,7 @@ const NavBar = props => {
                 <Box flex={1} align={"right"}>
                     <ThemeToggleButton />
                     <Box ml={2} display={{ base: 'inline-block', md: 'none' }}>
-                        <Menu>
+                        <Menu isLazy>
                             <MenuButton as={IconButton} icon={<HamburgerIcon />}
                                 variant='outline'
                                 aria-label="Options"
@@ -107,6 +118,13 @@ const NavBar = props => {
                                 <NextLink href="/Skills" passHref>
                                     <MenuItem as={Link}>Skills</MenuItem>
                                 </NextLink>
+                                <MenuItem
+                                    as={Link}
+                                    target="_blank"
+                                    href="https://drive.google.com/file/d/1coMZuiIl96_udTjlHYE-FskNfexAcJ9A/view?usp=sharing"
+                                >
+                                    Resume
+                                </MenuItem>
                                 <MenuItem
                                     as={Link}
                                     href="https://github.com/kanitmann/portfoliov2"
