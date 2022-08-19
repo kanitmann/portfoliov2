@@ -81,7 +81,7 @@ const Page = () => {
                     <BioSection>
                         <BioYear>2021</BioYear>
                         <BioMonth>Mar - Aug</BioMonth>
-                        Interned at <Link href="https://www.trikon.tech/" passHref>Trikon Technologies</Link> as Firmware Developer.
+                        Interned at <Link href="https://www.instagram.com/trikon.tech/" passHref>Trikon Technologies</Link> as Firmware Developer.
                         <BioMonth>Jul - Sep</BioMonth>
                         Joined <Link href="https://www.tatapower.com/" passHref>Tata Power</Link> as Full Stack Intern.
                         <BioMonth>Mar - Dec</BioMonth>
