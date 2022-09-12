@@ -1,10 +1,10 @@
 import Head from "next/head"
-import NavBar from "../navbar"
-import { Box, Container } from '@chakra-ui/react'
-import PCLoader from "../pc-loader"
-import dynamic from "next/dynamic"
-import Footer from "../footer"
 import Script from 'next/script';
+import dynamic from "next/dynamic"
+import { Box, Container } from '@chakra-ui/react'
+import NavBar from "../navbar"
+import PCLoader from "../pc-loader"
+import Footer from "../footer"
 
 
 const LazyPC = dynamic(() => import('../pc'), {

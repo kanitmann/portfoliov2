@@ -1,11 +1,10 @@
+import { AnimatePresence } from "framer-motion";
 import { ChakraProvider } from "@chakra-ui/react";
 import Layout from '../components/layouts/main'
 import theme from "../lib/theme";
 import Fonts from "../components/fonts";
-import { AnimatePresence } from "framer-motion";
 import Chakra from "../components/chakra";
 import '../public/app.css'
-import CookieConsent from "react-cookie-consent";
 
 if (typeof window !== 'undefined') {
     window.history.scrollRestoration = 'manual'

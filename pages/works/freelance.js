@@ -1,6 +1,6 @@
+import NextLink from 'next/link'
 import { Container, Divider, Badge, Box, Button } from '@chakra-ui/react'
 import { Title } from '../../components/work'
-import NextLink from 'next/link'
 import P from '../../components/paragraph'
 import Layout from '../../components/layouts/article'
 
