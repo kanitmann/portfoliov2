@@ -1,13 +1,24 @@
-import { Container, Heading, SimpleGrid, Divider } from '@chakra-ui/react'
-import Section from "../../components/section"
+import { Container, Divider, Badge, Box, Button } from '@chakra-ui/react'
+import { Title } from '../../components/work'
+import NextLink from 'next/link'
+import P from '../../components/paragraph'
 import Layout from '../../components/layouts/article'
-import { WorkGridItem } from '../../components/grid-item'
-import thumbBlank from '../../public/images/blank.png'
 
 const Freelance = () => {
     return (
         <Layout>
             <Container maxW='container.sm'>
+                <Title>Freelance <Badge>2021</Badge> </Title>
+                <P>This page is still under construction.
+                </P>
+                <Divider my={6} />
+                <Box my={6} align="center">
+                    <NextLink href="/works" passHref>
+                        <Button colorScheme="teal">Return to Works</Button>
+                    </NextLink>
+                </Box>
+            </Container>
+            {/* <Container maxW='container.sm'>
                 <Heading as="h3" fontSize={20} mb={4}>
                     Logo Design
                 </Heading>
@@ -59,7 +70,7 @@ const Freelance = () => {
                         </WorkGridItem>
                     </Section>
                 </SimpleGrid>
-            </Container >
+            </Container > */}
         </Layout>
     )
 }
