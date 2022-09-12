@@ -17,18 +17,8 @@ const Website = ({ Component, pageProps, router }) => {
             <ChakraProvider theme={theme}>
                 <Fonts />
                 <Layout router={router}>
-                    <CookieConsent
-                        location="bottom"
-                        buttonText="Sure man!!"
-                        cookieName="web_cookie"
-                        style={{ background: "#2B373B" }}
-                        buttonStyle={{ color: "#4e503b", fontSize: "13px" }}
-                        expires={150}
-                    >
-                        This website uses cookies to enhance the user experience.{" "}
-                    </CookieConsent>
                     <AnimatePresence
-                        exitBeforeEnter
+                        mode="wait"
                         initial={true}
                         onExitComplete={() => {
                             if (typeof window !== 'undefined') {
