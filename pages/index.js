@@ -47,7 +47,7 @@ const Page = () => {
                             overflow="hidden"
                         >
                             <ProfileImage
-                                src="/images/kanitmann.png"
+                                src="/images/kanitmann.jpg"
                                 alt="Profile image"
                                 borderRadius="full"
                                 width="100%"
@@ -59,8 +59,7 @@ const Page = () => {
                 <Section delay={0.1}>
                     <Heading as="h3" variant="section-title">Works</Heading>
                     <Paragraph>
-                        Tech enthusiast with entry-level industrial experience in Database Management, Web Development, and
-                        Embedded Programming.
+                        Hellooo! I'm Kanit, a computer science enthusiast who loves to explore and create with web development, cloud computing, blockchain and AI. Currently, I am working as a Cloud & Infrastructure Operations Intern at Ericsson, where I help maintain and manage cloud infrastructure systems to ensure they meet high standards of reliability, security, and performance.
                     </Paragraph>
 
                     <Box align="center" my={4}>
@@ -77,6 +76,12 @@ const Page = () => {
 
                 <Section delay={0.2}>
                     <Heading as="h3" variant="section-title">Bio</Heading>
+
+                    <BioSection>
+                        <BioYear>2023</BioYear>
+                        <BioMonth>Feb - Present</BioMonth>
+                        Working as <b>Cloud & Infrastructure Operations Intern</b> at <Link href="https://www.ericsson.com/en" passHref>Ericsson</Link>.
+                    </BioSection>
 
                     <BioSection>
                         <BioYear>2021</BioYear>
